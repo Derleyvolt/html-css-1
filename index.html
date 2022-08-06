@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul class="items">
+            <li> <a href="#" class="home"> Home </a> </li>
+            <li> <a href="#"> Produto </a> </li>
+            <li> <a href="#"> Serviços </a> </li>
+            <li> <a href="#"> Contato </a> </li>
+            <li> <a href="#"> Sobre </a> </li>
+            <li> <a href="#" class="add"> Adicionar Sorvetes </a> </li>
+        </ul>
+    </nav>
+
+    <header>
+        <img src="logo.jpg">
+        <h2> Sorvetex </h2>
+
+        <div>
+            <input type="text" placeholder="Sorvete de Morango" class="search">
+        </div>
+    </header>
+
+    <main class="pagina_principal">
+        <section class="side_bar">
+            <h3 class="filter"> FILTROS </h3>
+
+            <b> Por Categoria </b> <br><br>
+
+            <input type="checkbox" class="categoria">
+            <label> Morango </label> <br><br>
+
+            <input type="checkbox" class="categoria">
+            <label> Chocolate </label> <br><br>
+
+            <input type="checkbox" class="categoria">
+            <label> Maracujá </label> <br><br>
+
+            <input type="checkbox" class="categoria">
+            <label> Balnilha </label> <br><br>
+
+            <div class="teste">
+                <hr>
+            </div>
+
+            <b> Feito no </b> <br><br>
+
+            <input type="checkbox" class="categoria">
+            <label> Ceará </label> <br><br>
+
+            <input type="checkbox" class="categoria">
+            <label> Rio grande do Sul </label> <br><br>
+
+            <input type="checkbox" class="categoria">
+            <label> Rio de Janeiro </label> <br><br>
+
+            <input type="checkbox" class="categoria">
+            <label> São Paulo </label> <br><br>
+        </section>
+
+        <section class="produtos">
+            <section>
+                <img src="1.png" width="200" height="200">
+                <p> Sorvete 1 </p>
+            </section>
+        </section>
+
+    </main>
+
+    <script>
+        let val = 1
+
+        $('.add').on('click', () => {
+            $(".produtos").append(`<section>
+                <img src="${val}.png" width="200" height="200">
+                <p> Sorvete ${val} </p>
+                </section>`)
+            val = val % 6 + 1
+            })
+
+        $('.home').on('click', () => {
+
+        }) 
+
+    </script>
+
+</body>
+</html>

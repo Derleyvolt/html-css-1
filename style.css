@@ -1,0 +1,104 @@
+header {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+nav {
+    background-color: black;
+    max-width: 100%;
+    width: auto;
+    padding: 5px;
+}
+
+ul {
+    list-style: none;
+    background-color: black;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+li {
+    padding-right: 15px;
+}
+
+.items li:hover {
+    background-color: rgb(60, 142, 140);
+}
+
+.items {
+    color:bisque;
+}
+
+.items li a {
+    padding: 5px;
+    margin: 0;
+    color: beige;
+    text-decoration: none;
+}
+
+.produtos {
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.produtos p {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.produtos section {
+    margin: 2px;
+}
+
+.produtos section:hover {
+    background-color: rgb(215, 215, 215);
+    border-style : groove;
+    border-width : 1px;
+    margin: 1px;
+    border-color : rgb(237, 165, 64);
+}
+
+.search {
+    margin: 16px;
+    width: 600px;
+    height: 30px;
+    border: 1px purple;
+    border-style:solid;
+    border-radius: 6px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.pagina_principal {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.side_bar {
+    width: 200px;
+    min-width: 200px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: beige;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.filter {
+    margin-left: 15px;
+}
+
+.categoria {
+    border-radius: 5px;
+    border-style: double;
+}
+
+.side_bar hr {
+    list-style-type: circle;
+    margin: 5px;
+}
