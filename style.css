@@ -55,6 +55,7 @@ li {
 
 .produtos section {
     margin: 2px;
+    max-height: 250px;
 }
 
 .produtos section:hover {
@@ -69,10 +70,11 @@ li {
     margin: 16px;
     width: 600px;
     height: 30px;
-    border: 1px purple;
-    border-style:solid;
+    border: none;
     border-radius: 6px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 2px 2px 13px black;
+    background-color: rgb(241, 240, 240);
 }
 
 .pagina_principal {
@@ -87,6 +89,7 @@ li {
     background-color: beige;
     margin-top: 10px;
     padding: 10px;
+    box-shadow: 5px 5px 13px black;
 }
 
 .filter {
